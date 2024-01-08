@@ -3,13 +3,10 @@ const User = require("../models/User");
 const CHAMBRE=require('../models/chambre')
 const RESERVATION=require('../models/Reservation')
 
-const sequelize = new Sequelize({
-   dialect: 'mariadb',
-  host: 'bql3rhfld479jnsds3kj-mysql.services.clever-cloud.com',
-  port: 3306, // Le port MySQL par défaut
-  username: 'uiaamrqiqazzm6hs',
-  password: 'uiaamrqiqazzm6hs', // Remplacez par votre mot de passe vPanel
-  database: 'bql3rhfld479jnsds3kj',
+const sequelize = new Sequelize("bql3rhfld479jnsds3kj", "uiaamrqiqazzm6hs", "bql3rhfld479jnsds3kj", {
+  host: "bql3rhfld479jnsds3kj-mysql.services.clever-cloud.com",
+  dialect: "mariadb",
+  logging: true,
 });
 
 sequelize
