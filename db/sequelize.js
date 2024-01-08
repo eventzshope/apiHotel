@@ -2,8 +2,10 @@ const { DataTypes, Sequelize } = require("sequelize");
 const User = require("../models/User");
 const CHAMBRE=require('../models/chambre')
 const RESERVATION=require('../models/Reservation')
-const sequelize = new Sequelize("hotel", "root", "", {
-  host: "localhost",
+require("dotenv").config()
+console.log(process.env.DB_USERNAME)
+const sequelize = new Sequelize(process.env.DBNAME, process.env.DB_USERNAME, process.env.DBPASSWORD, {
+  host: process.env.DB_HOST,
   dialect: "mariadb",
   logging: false,
 });
