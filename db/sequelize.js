@@ -5,11 +5,11 @@ const RESERVATION=require('../models/Reservation')
 
 const sequelize = new Sequelize({
    dialect: 'mariadb',
-  host: 'sql210.infinityfree.com',
+  host: 'bql3rhfld479jnsds3kj-mysql.services.clever-cloud.com',
   port: 3306, // Le port MySQL par défaut
-  username: 'if0_35451994',
-  password: 'vuuH8pNIoM8yVL', // Remplacez par votre mot de passe vPanel
-  database: 'if0_35451994_API',
+  username: 'uiaamrqiqazzm6hs',
+  password: 'uiaamrqiqazzm6hs', // Remplacez par votre mot de passe vPanel
+  database: 'bql3rhfld479jnsds3kj',
 });
 
 sequelize
