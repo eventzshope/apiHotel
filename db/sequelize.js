@@ -2,10 +2,9 @@ const { DataTypes, Sequelize } = require("sequelize");
 const User = require("../models/User");
 const CHAMBRE=require('../models/chambre')
 const RESERVATION=require('../models/Reservation')
-require("dotenv").config()
-console.log(process.env.DB_USERNAME)
-const sequelize = new Sequelize(process.env.DBNAME, process.env.DB_USERNAME, process.env.DBPASSWORD, {
-  host: process.env.DB_HOST,
+
+const sequelize = new Sequelize("if0_35451994_API", "if0_35451994","vuuH8pNIoM8yVL", {
+  host: "sql210.infinityfree.com",
   dialect: "mariadb",
   logging: false,
 });
