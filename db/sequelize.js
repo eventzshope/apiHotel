@@ -5,7 +5,7 @@ const RESERVATION=require('../models/Reservation')
 
 const sequelize = new Sequelize("bql3rhfld479jnsds3kj", "uiaamrqiqazzm6hs", "bql3rhfld479jnsds3kj", {
   host: "bql3rhfld479jnsds3kj-mysql.services.clever-cloud.com",
-  dialect: "mysql",
+  dialect: "mariadb",
   logging: false,
 });
 
